@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
 const cors = require('cors')
-const port = process.env.port;
+const port = process.env.port || 6010;
 
 app.use([cors(), 
       express.static(__dirname + '/client/build'),
